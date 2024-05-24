@@ -1,14 +1,15 @@
 import 'package:adv_flutter_ch3/chrome_screen/provider/chrome_provider.dart';
 import 'package:adv_flutter_ch3/chrome_screen/view/chrome_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:provider/provider.dart';
-
+TextEditingController txtsearch = TextEditingController();
+late InAppWebViewController inAppWebViewController;
 class Google_Screen extends StatelessWidget {
   const Google_Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController txtsearch = TextEditingController();
     return Scaffold(
       appBar: AppBar(),
       body: SafeArea(

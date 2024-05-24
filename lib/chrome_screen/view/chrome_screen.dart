@@ -4,13 +4,13 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/cupertino.dart';
 
+import 'Google_Screen.dart';
+
 class Chrome_Screen extends StatelessWidget {
   const Chrome_Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    late InAppWebViewController inAppWebViewController;
-    TextEditingController txtsearch = TextEditingController();
 
     return Scaffold(
       appBar: AppBar(
